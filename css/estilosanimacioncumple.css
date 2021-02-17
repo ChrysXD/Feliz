@@ -1,0 +1,364 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body{
+font-family: sans-serif;
+text-align: center;
+  background-image:radial-gradient(circle 55px ,white 5%,#407BA0 90%,black );
+}
+h1,h3{
+  color: white;
+}
+.nubes,.mapa{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.nubes{
+  width: 90px;
+  height: 90px;
+  /*outline: 1px solid red;*/
+}
+
+.nubes img{
+  position: relative;
+  z-index: 20;
+  width: 90%;
+  height: 90%;
+  min-width: 300px;
+  min-height: 300px;
+  margin-left: -170%;
+  bottom: 120%;
+}
+
+.mapa{
+  margin-left: auto;
+  width: 90%;
+  height: 90%;
+  min-width: 300px;
+  min-height: 300px;
+  margin-right: -65%;
+  background-color: lightblue;
+  top: 0%;
+  right: 0%;
+  border-radius: 50%;
+  box-shadow: -30px -20px 0 0 rgba(0,0,0,.15) inset,
+              -70px -30px 0 0 rgba(0,0,0,.1) inset,
+              5px 5px 0 0 rgba(255,255,255,.2) inset;
+  background: url(../img/mapa.jpg);
+  background-size: cover;
+  -webkit-animation: tierra-girando 5s infinite linear;
+}
+
+@-webkit-keyframes tierra-girando{
+  from{
+    background-position:  left center;
+  }
+  to{
+    background-position:  -400px center;
+  }
+}
+
+.estrella{
+  width:2px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+}
+.estrella:nth-child(1){
+  top: 30%;
+  left: 50%;
+}
+.estrella:nth-child(2){
+  top: 90%;
+  left:90%;
+}
+.estrella:nth-child(3){
+  top: 90%;
+  left: 20%;
+}
+.estrella:nth-child(4){
+  top: 33%;
+  left: 70%;
+}
+.estrella:nth-child(5){
+  top: 20%;
+  left: 60%;
+}
+.estrella:nth-child(6){
+  top: 10%;
+  left: 50%;
+}
+.estrella:nth-child(10){
+  top: 60%;
+  left: 10%;
+}
+.estrella:nth-child(7){
+  top: 30%;
+  left: 90%;
+}
+.estrella::nth-child(8){
+  top: 20%;
+  left: 10%;
+}
+.estrella::nth-child(9){
+  top: 60%;
+  left: 75%;
+}
+.estrella:nth-child(11){
+  top: 25%;
+  left: 75%;
+}
+.estrella:nth-child(12){
+  top: 30%;
+  left:30%;
+}
+.estrella:nth-child(13){
+  top: 10%;
+  left: 90%;
+}
+.estrella:nth-child(14){
+  top: 70%;
+  left: 33%;
+}
+.estrella:nth-child(15){
+  top: 60%;
+  left: 20%;
+}
+.estrella:nth-child(16){
+  top: 55%;
+  left: 20%;
+}
+.estrella:nth-child(20){
+  top: 10%;
+  left: 60%;
+}
+.estrella:nth-child(17){
+  top: 90%;
+  left: 30%;
+}
+.estrella::nth-child(18){
+  top: 10%;
+  left: 20%;
+}
+.estrella::nth-child(19){
+  top: 75%;
+  left: 60%;
+}
+
+.estrella:nth-child(2n){
+  -webkit-animation: estrella-par 3s infinite;
+}
+
+@-webkit-keyframes estrella-par{
+  0% , 90%{
+    box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+  }
+  100%{
+    box-shadow: 0 0 16px 16px rgba(255,255,255,.3);
+  }
+}
+
+.estrella:nth-child(2n+1){
+  -webkit-animation: estrella-impar 4s infinite;
+}
+
+@-webkit-keyframes estrella-impar{
+  0%, 35%, 50%{
+    box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+  }
+  45%{
+    box-shadow: 0 0 16px 16px rgba(255,255,255,.3);
+  }
+}
+
+.estrella:nth-child(7n+1){
+  -webkit-animation: estrella-i 3s infinite;
+}
+
+@-webkit-keyframes estrella-i{
+  0%, 35%, 50%{
+    box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+  }
+  45%{
+    box-shadow: 0 0 16px 16px rgba(255,255,255,.3);
+  }
+}
+
+.estrella:nth-child(4n+3){
+  -webkit-animation: estrella-k 5s infinite;
+}
+
+@-webkit-keyframes estrella-k{
+  0%, 35%, 50%{
+    box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+  }
+  45%{
+    box-shadow: 0 0 16px 16px rgba(255,255,255,.3);
+  }
+}
+
+.estrella:nth-child(n*3){
+  -webkit-animation: estrella-f 2s infinite;
+}
+
+@-webkit-keyframes estrella-f{
+  0%, 35%, 50%{
+    box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+  }
+  45%{
+    box-shadow: 0 0 16px 16px rgba(255,255,255,.3);
+  }
+}
+
+.estrella:nth-child(n*6){
+  -webkit-animation: estrella-j 3s infinite;
+}
+
+@-webkit-keyframes estrella-j{
+  0%, 35%, 50%{
+    box-shadow: 0 0 3px 3px rgba(255,255,255,.3);
+  }
+  45%{
+    box-shadow: 0 0 16px 16px rgba(255,255,255,.3);
+  }
+}
+/*box-shadow: 0 0 16px 16px rgba(255,255,255,.3);*/
+
+
+#main-header {
+  background: #2D4F72;
+  color: white;
+  height: 80px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+#main-header a {
+    color: white;
+  }
+
+
+#logo-header {
+  float: left;
+  padding: 15px 0 0 20px;
+  text-decoration: none;
+}
+  #logo-header:hover {
+    color: #0b76a6;
+  }
+  
+  #logo-header .site-name {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+  
+  #logo-header .site-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #999;
+  }
+
+  #logo-header  img{
+    margin-top: -10px;
+    display: block;
+    width: 25%;
+    max-width: 280px;
+    border-radius: 50px;
+  }
+
+  /*
+ * Navegación
+ */
+nav {
+  float: right;
+  z-index: 100;
+}
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 20px;
+  }
+  
+    nav ul li {
+      display: inline-block;
+      line-height: 80px;
+    }
+      
+      nav ul li a {
+        display: block;
+        padding: 0 10px;
+        text-decoration: none;
+      }
+      
+        nav ul li a:hover {
+          background: #0b76a6;
+          transition: 1200ms ease all;
+        }
+
+        .contenedor-texto {
+           margin-top: 100px;
+           background-color: rgba(36,69,102, 0.7);
+           width: 15%;
+           display: inline-block;
+           margin-left: 54%;
+           margin-bottom: 20px;
+           border-radius: 20px;
+           border: solid 2.5px #fff;
+        }
+
+        @media screen and (max-width: 800px) {
+    
+           .contenedor-texto{
+            background: #000;
+           }
+        }
+
+        .contenedor-texto .botonparainicio{
+          background: #1C2833 ;
+          color: #FBFCFC ;
+          border: solid 2px #FBFCFC ;
+          width: 50%;
+          cursor: pointer;
+          font-size: 16px;
+          padding: 10px 20px;
+          text-align: center;
+          overflow: hidden;margin-top: 20px;
+          margin-bottom: 20px;
+        }
+
+        .contenedor-texto .botonparainicio:hover{
+          background: #C2C3C3;
+          color: #000;
+          border: solid 4px #17202A;
+          border-radius: 20px;
+          transition: 2.3s ease all;
+        }
+
+        .footer {
+  background: #2D4F72;
+  color: #161718;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+

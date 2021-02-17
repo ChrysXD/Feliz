@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Video</title>
+    <link rel="stylesheet" href="css/video-js.css">
+	<script src="js/video.js"></script>
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" type="x-image/icon" href="img/iconoaño.ico">
+</head>
+
+<body>
+
+    <header id="main-header">
+              <a id="logo-header" href="index.html">
+                  <img src="img/Logoaño.jpg" class="logo">
+              </a>
+
+              <nav>
+                  <ul>
+                      <li><a href="año.html">Inicio</a></li>
+                      <li><a href="galeria.html">Galería</a></li>
+                      <li><a href="libro.html">Libro</a></li>
+                      <li><a href="video.html">Vídeo</a></li>
+                      
+                  </ul>
+              </nav>
+
+          </header>
+
+    
+    
+
+    
+
+    
+
+
+	   <main>
+		<div class="contenedor">
+			<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+				<source src="video/Cumpleaños.mp4" type="video/mp4">
+			</video>
+	
+			<div class="contenedor-texto">
+        
+        <a href="animacionCumpleaños.html"><button class="botonparainicio">Final</button></a>
+    </div>
+		</div>
+	</main>
+    
+
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>Hecho con todo el amor del mundo uvu</h3>
+    <img src="img/cora.png" style="max-width: 100px; width: 100%;"> 
+  </footer>
+    
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.slicebox.js"></script>
+
+<script src="js/script.js"></script>
+<script>
+		var reproductor = videojs('fm-video', {
+			fluid: true
+		});
+	</script>
+
+</body>
+
+</html>
